@@ -1,0 +1,167 @@
+<!-- 首页 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>智能问答系统（超星）</title>
+    <link href="./css/common.css" rel="stylesheet" />
+    <link href="./css/index.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <!-- 导航 -->
+    <nav>
+        <!-- LOGO：单击跳转到相关展示界面 -->
+        <a class="logo" href="https://z.chaoxing.com/yanshi/first" target="_blank">
+            <img src="./imgs/logo.png"/>
+        </a>
+        <a href="./index.html">首页</a>
+        <!-- #gallary 页面内锚点（后续会用到） -->
+        <a href="./index.html#answer">智能小助手</a>
+        <a href="./index.html#gallary">推荐</a>
+        <a href="./index.html#news">热点时事</a>
+        <a href="./login.html">登录</a>
+        <a class="search" href="https://www.google.com/" target="_blank">
+            <img src="./imgs/search.png"/>
+        </a>
+    </nav>
+    <!-- TODO:header -->
+    <header>
+        <h2>让学习更简单</h2>
+    </header>
+
+    <!-- TODO:main -->
+    <main>
+
+        <!-- 智能问答系统 -->
+        <section id="answer">
+            <div class="anwser-wrap">
+                <div class="left-half">
+
+                </div>
+                <!-- 公告栏，工具栏 -->
+                <div class="right-half">
+                    <div id="announcement">
+                        <div id="announcement-header">
+                            <h1>公告<img src="./imgs/horn.png"/></h1>
+                        </div>
+                        <div class="border"></div>
+                        <div id="announcement-content">
+                            <p>公告内容</p>
+                        </div>
+                    </div>
+                    <div id="tools">
+                        <div id="tools-header">
+                            <h1>常用工具</h1>
+                        </div>
+                        <div class="border"></div>
+                        <div id="tools-content">
+                            <button class="tools-button">个人</button>
+                            <button class="tools-button">帮助</button>
+                            <button class="tools-button">设置</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- 推荐信息 -->
+        <section class="gallary" id="gallary">
+            <h2>推荐</h2>
+            <!--<p>记录生活中的美好</p>-->
+            <!-- TODO:推荐信息展示 -->
+            <ul id="pics">
+                <li class="gallary-item">
+                    <img src="./data/pic/photo-4-1699176901255.png">
+                    <p class="name">海边</p>
+                    <p class="author">by author</p>
+                    <p class="desc">浪白丝云雾</p>
+                </li>
+                <li class="gallary-item">
+                    <img src="./data/pic/pic-1.png">
+                    <p class="name">落日</p>
+                    <p class="author">by author</p>
+                    <p class="desc">长河落日圆</p>
+                </li>
+                <li class="gallary-item">
+                    <img src="./data/pic/pic-2.png">
+                    <p class="name">礁石</p>
+                    <p class="author">by author</p>
+                    <p class="desc">东临碣石，以观沧海</p>
+                </li>
+                <li class="gallary-item">
+                    <img src="./data/pic/pic-3.png">
+                    <p class="name">波浪</p>
+                    <p class="author">by author</p>
+                    <p class="desc">木落雁嗷嗷，洞庭波浪高</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- 热点时事 -->
+        <section id="news">
+            <h2>热点时事</h2>
+            <div class="news-wrap">
+                <div class="left-half">
+                    <!-- Tab标签页展示 -->
+                    <div class="container">
+                        <div class="tab-wrapper">
+                            <!--tab section 1-->
+                            <input type="radio" name="tab-radio" class="tab-radio" id="tab-radio-1" checked>
+                            <label for="tab-radio-1" class="tab-handler tab-handler-1">水浒传</label>
+                            <div class="tab-content tab-content-1">《水浒传》是中国历史上第一部用古白话文写成的歌颂农民起义的长篇章回体版块结构小说，以宋江领导的起义军为主要题材，通过一系列梁山英雄反抗压迫、英勇斗争的生动故事，暴露了北宋末年统治阶级的腐朽和残暴，揭露了当时尖锐对立的社会矛盾和“官逼民反”的残酷现实。按120回本计，前70回讲述各个好汉上梁山，后50回主要为宋江全伙受招安为朝廷效力，以及被奸臣所害。</div>
+                            <!--tab section 2-->
+                            <input type="radio" name="tab-radio" class="tab-radio" id="tab-radio-2">
+                            <label for="tab-radio-2" class="tab-handler tab-handler-2">三国演义</label>
+                            <div class="tab-content tab-content-2">《三国演义》是中国古典四大名著之一，全名为《三国志通俗演义》。作者是元末明初小说家罗贯中，是中国第一部长篇章回体历史演义小说。描写了从东汉末年到西晋初年之间近105年的历史风云。全书反映了三国时代的政治军事斗争，反映了三国时代各类社会矛盾的转化，并概括了这一时代的历史巨变，塑造了一批叱咤风云的三国英雄人物。</div>
+                            <!--tab section 3-->
+                            <input type="radio" name="tab-radio" class="tab-radio" id="tab-radio-3">
+                            <label for="tab-radio-3" class="tab-handler tab-handler-3">西游记</label>
+                            <div class="tab-content tab-content-3">《西游记》是中国古典四大名著之一，是由明代小说家吴承恩所创作的中国古代第一部浪漫主义的长篇神魔小说。主要描写了唐朝太宗贞观年间孙悟空、猪八戒、沙僧、白龙马四弟子保护唐僧西行取经，沿途历经九九八十一难，一路降妖伏魔，化险为夷，最后到达西天，取得真经的故事。取材于《大唐三藏取经诗话》和汉族民间传说。 [1] </div>
+                            <!--tab section 4-->
+                            <input type="radio" name="tab-radio" class="tab-radio" id="tab-radio-4">
+                            <label for="tab-radio-4" class="tab-handler tab-handler-4">红楼梦</label>
+                            <div class="tab-content tab-content-4">《红楼梦》，中国古典四大名著之首，清代作家曹雪芹创作的章回体长篇小说[1] 。早期仅有前八十回抄本流传，八十回后部分未完成且原稿佚失。原名《脂砚斋重评石头记》。程伟元邀请高鹗协同整理出版百二十回全本[2] ，定名《红楼梦》。亦有版本作《金玉缘》。</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 简略漂浮框 -->
+                <div class="right-half">
+                    <div class="briefly">
+                        <div class="briefly-header">
+                            <div><h1 style="text-align:left;">向你推荐</h1></div>
+                            <div><p style="text-align:right;">所有活动 ></p></div>
+                        </div>
+                        <div class="border"></div>
+                        <div  class="briefly-content">
+                            <div>内容一</div>
+                            <div>内容一</div>
+                            <div>内容一</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <span>Copyright ? 2024 ChaoXing</span>
+        <a href="https://z.chaoxing.com/yanshi/first" target="_blank">
+            <img src="./imgs/logo.png"/>
+        </a>
+    </footer>
+<!-- 脚本：JS中引用了DOM元素，需添加在DOM元素末尾 -->
+<script src="./js/index.js"></script>
+
+<script src="https://g.alicdn.com/chatui/sdk-v2/0.3.5/sdk.js"></script>
+<script src="https://g.alicdn.com/chatui/extensions/5.18.0/isv-parser.js"></script>
+<script src="./js/setup.js"></script>
+<script src="https://g.alicdn.com/chatui/icons/2.0.2/index.js" async></script>
+</body>
+
+</html>

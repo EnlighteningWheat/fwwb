@@ -1,0 +1,66 @@
+<!-- 注册界面 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>智能问答系统（超星）</title>
+    <link href="./css/common.css" rel="stylesheet" />
+    <link href="./css/login.css" rel="stylesheet" />
+
+</head>
+
+<body>
+<!-- 导航 -->
+<nav>
+    <!-- LOGO：单击跳转到相关展示界面 -->
+    <a class="logo" href="https://z.chaoxing.com/yanshi/first" target="_blank">
+        <img src="./imgs/logo.png"/>
+    </a>
+    <a href="./index.html">首页</a>
+    <!-- #gallary 页面内锚点（后续会用到） -->
+    <a href="./index.html#answer">智能小助手</a>
+    <a href="./index.html#gallary">推荐</a>
+    <a href="./index.html#news">热点时事</a>
+    <a href="./login.html">登录</a>
+    <a class="search" href="https://www.google.com/" target="_blank">
+        <img src="./imgs/search.png"/>
+    </a>
+</nav>
+<!-- TODO:header -->
+<header>
+</header>
+
+<!-- TODO:main -->
+
+<div class="container">
+    <h1>注册</h1>
+    <form>
+        <label for="username">用户名</label>
+        <input type="text" id="username">
+
+        <label for="password">密码</label>
+        <input type="password" id="password">
+
+        <label for="confirm-password">确认密码</label>
+        <input type="password" id="confirm-password">
+
+        <button type="button" onclick="register()">注册</button>
+    </form>
+    <p>已有账号？<a href="login.html">点击登录</a></p>
+</div>
+
+
+<!-- 页脚 -->
+<footer>
+    <span>Copyright ? 2024 ChaoXing</span>
+    <a href="https://z.chaoxing.com/yanshi/first" target="_blank">
+        <img src="./imgs/logo.png"/>
+    </a>
+</footer>
+<!-- 脚本：JS中引用了DOM元素，需添加在DOM元素末尾 -->
+<script src="./js/login.js"></script>
+
+</body>
+
+</html>
