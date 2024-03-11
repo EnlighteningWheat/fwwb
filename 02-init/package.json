@@ -1,0 +1,23 @@
+{
+  "name": "course-demo",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  },
+  "private": true,
+  "devDependencies": {
+    "formidable": "^2.1.2",
+    "mime-types": "^2.1.34"
+  },
+  "version": "1.0.0",
+  "main": "express-helloworld.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+
+
+}
