@@ -1,7 +1,18 @@
 前端项目：02-init
-ChatUI组件资料库
 
-整体使用NodeJS。
+
+运行说明：
+一、如无需使用语音转文字功能，直接打开“ChatUI.html”即可。
+
+二、如需使用讯飞语音转文字功能。（注：讯飞api的免费次数有限，谨慎使用）
+1.切换到ChatUI.html所在文件目录。
+2.在命令行输入http-server。
+3.若运行失败。需要（建议全局）安装插件，在命令行输入“npm install http-server -g”;
+4.若尝试安装插件失败，请尝试用管理员身份运行。
+5.成功安装插件后，执行步骤12.
+
+
+项目概况：
 
 聊天界面：引用“ChatUI”相关组件，制作聊天界面。
 
@@ -12,19 +23,10 @@ ChatUI组件资料库
 
 注意事项：
 目前部分js文件调用为网址调用。也可使用本地调用。
-聊天框由.js文件动态生成，如需修改属性，可参考“ChatUI.html”158行。
+聊天框由.js文件动态生成，如需修改元素属性，可参考“ChatUI.html”158行。
 
 关键文件作用：
 /web/ChatUI.html：聊天界面主页。
 /web/js/setup.js：对ChatUI组件的使用/修改/细节编辑。
-可在“setup.js”文件的72行，根据需求添加侧边栏。
-
-/web/css/common.css:部分页面的公共css属性总和，与“index.css”"login.css"等搭配使用。
 
 语音转文字相关js文件：/web/js/voice内文件 + /web/js/transcode.worker.js
-
-
-在服务器环境下运行：确保已安装nodejs环境
-1.以管理员身份运行命令行 ;
-2. (可省)全局安装插件“npm install http-server -g”;
-3.在当前html目录下执行http-server;
