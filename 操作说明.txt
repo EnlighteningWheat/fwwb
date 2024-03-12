@@ -1,15 +1,15 @@
 前端项目：02-init
 
 
-“ChatUI.html”界面运行说明：
-一、如无需使用语音转文字功能，直接打开“ChatUI.html”即可。
+运行说明：
+在项目目录下，在终端/命令行输入"node server.js",若出现代码
+“
+Server is running on http://localhost:3000
+server listening on port:80
+”
+代表运行成功，通过网址“http://localhost:3000”访问，默认界面为“index.html”。如需访问其他界面，可在网址后添加对应地址，如”http://localhost:3000/ChatUI.html“。
 
-二、如需使用讯飞语音转文字功能。（注：讯飞api的免费次数有限，谨慎使用）
-1.切换到ChatUI.html所在文件目录。
-2.在命令行输入http-server。
-3.若运行失败。需要（建议全局）安装插件，在命令行输入“npm install http-server -g”;
-4.若尝试安装插件失败，请尝试用管理员身份运行。
-5.成功安装插件后，执行步骤12.
+注：确保正确安装nodejs环境，若在idea内Terminal无法运行，则尝试搜索cmd并用管理员身份运行，记得切换到项目路径。
 
 
 项目概况：
