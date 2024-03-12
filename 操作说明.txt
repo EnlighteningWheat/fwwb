@@ -1,3 +1,4 @@
+
 前端项目：02-init
 
 
@@ -7,7 +8,8 @@
 Server is running on http://localhost:3000
 server listening on port:80
 ”
-代表运行成功，通过网址“http://localhost:3000”访问，默认界面为“index.html”。如需访问其他界面，可在网址后添加对应地址，如”http://localhost:3000/ChatUI.html“。
+代表运行成功，通过网址“http://localhost:3000”访问，默认界面为“index.html”。
+如需访问其他界面，可在网址后添加对应地址，如”http://localhost:3000/ChatUI.html“。
 
 注：确保正确安装nodejs环境，若在idea内Terminal无法运行，则尝试搜索cmd并用管理员身份运行，记得切换到项目路径。
 
