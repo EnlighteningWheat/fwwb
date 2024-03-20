@@ -4,6 +4,12 @@ from py2neo import Graph, Node, Relationship
 import json
 import pandas as pd
 import pandas
+
+def json_files_to_neo4j( folder_path,graph):
+    for filename in os.listdir(folder_path):
+        if filename.endswith(".json"):
+            json_path = os.path.join(folder_path, filename)
+            json_to_neo4j(json_path, graph)
 def json_to_neo4j(json_path,graph):
     with open(json_path, 'r', encoding='utf-8') as file:
         json_data=json.load(file)
@@ -11,8 +17,12 @@ def json_to_neo4j(json_path,graph):
     for item in json_data:
         text = item.get('text', '')
         for spo in item.get('spo_list', []):
+            if len(spo) < 3:
+                continue
             subject_name, relation, object_name = spo
             # 创建或获取实体节点
+            if not relation:
+                continue
             subject_node = graph.nodes.match("Entity", name=subject_name).first()
             if not subject_node:
                 subject_node = Node("Entity", name=subject_name)
