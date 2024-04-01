@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.search {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.search input[type="text"] {
+    flex: 1;
+    padding: 5px 10px;
+    border: 2px solid #888;
+    border-radius: 5px;
+    margin:10px 15px;
+    height:35px;
+}
+
+#clean-button,#refresh-button{
+    border:none;
+    padding: 0;
+    margin: 10px;
+    background:none;
+}
+
+#clear-button img {
+    display: block; /* 将图片设置为块级元素 */
+}
+
+#search-button {
+    padding: 0;
+    margin: 10px 15px;
+    background-color: #8faadd;
+    border: 2px solid #888;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.recommendation {
+    margin-top: 5px;
+}
+
+.recommendation .header {
+    display: flex;
+    align-items: center;
+    margin:15px;
+}
+
+.recommendation .header span {
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    color: #577bb6;
+    text-shadow: 0.5px 0.5px 1.5px #888; /* 灰色阴影 */
+    font-size: 24px; /* 放大字体 */
+}
+
+.recommendation .header button {
+    margin-left: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.content .item {
+    background-color: #efefe3;
+    padding: 20px;
+    border-radius: 15px;
+    height:200px;
+
+    position: relative;
+}
+
+.ancient-poetry-title{
+    font-weight: bold;
+    font-size: larger;
+    color: #3f5d88;
+}
+
+.ancient-poetry-author img{
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.ancient-poetry-author span{
+    font-size: smaller;
+    color: #9c3028;
+}
+
+.content .item .button-container {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.content .item button {
+    background:none;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+
+}
