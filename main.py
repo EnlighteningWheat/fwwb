@@ -25,12 +25,12 @@ if __name__ == "__main__" :
     # xlsf_to_json(folder_path, out_path)
 
     #知识图谱1：简单问题关系的知识图谱
-    # folder_path = "data/作业库(excel)"
-    # xlsf_to_neo4j(folder_path,graph)
-    # folder_path = "data/试卷库(excel)"
-    # xlsf_to_neo4j(folder_path, graph)
-    # folder_path = "data/课件"
-    # pptf_to_neo4j(folder_path, graph)
+    folder_path = "data/作业库(excel)"
+    xlsf_to_neo4j(folder_path,graph)
+    folder_path = "data/试卷库(excel)"
+    xlsf_to_neo4j(folder_path, graph)
+    folder_path = "data/课件"
+    pptf_to_neo4j(folder_path, graph)
 
     #知识图谱2：手动提取知识点的知识图谱
     folder_path = "data/作业库(json)(已处理)"
