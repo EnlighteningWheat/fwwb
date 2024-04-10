@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum=1.0, user-scalable=no shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>智能问答系统</title>
+    <link rel="stylesheet" type="text/css" href="./css/chat.css">
+    <link rel="stylesheet" type="text/css" href="./css/voice.css">
+    <script async src="https://hm.baidu.com/hm.js?85fad12bb9a6dab448f4eff0a19299a5"></script>
+</head>
+
+<body>
+<div class="chat-container">
+    <div class="chat-header">
+        <p style="font-size:20px;">智能问答服务</p>
+        <div style="width:100%;height:1px;background-color: #dfdfdf;"></div>
+    </div>
+    <div id="chat-messages" class="chat-messages">
+        <div class="welcome-message">
+            欢迎使用智能问答服务
+        </div>
+    </div>
+    <div class="chat-input">
+        <button id="start-btn">
+            <img src="imgs/voice-btn.png" style="height:100%;">
+        </button>
+        <input type="text" name="voice" id="message-input" placeholder="请输入您的问题" onkeypress="handleKeyPress(event)">
+        <button id="send-button">发送</button>
+    </div>
+    <section class="fixed-box" id="fixed-box">
+        <div class="fixed-main">
+            <button class="fixed-close" id="close-btn"></button>
+            <div id="fixed-txt" style="color:#7d7676">Hello! 请说出你想说的话！</div>
+            <div class="fixed-icon">
+                <img src="imgs/voice.png" alt="" />
+            </div>
+        </div>
+    </section>
+</div>
+
+<script src="js/crypto-js.min.js"></script>
+<script src="js/voice.js"></script>
+<script type="text/javascript" src="js/chat.js"></script>
+
+</body>
+
+</html>
